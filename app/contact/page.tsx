@@ -72,7 +72,7 @@ export default function Contact() {
                 <div className="border-t border-gray-200 dark:border-[#2A3447] pt-6 mb-12">
                   <h3 className="font-semibold text-lg mb-4 text-[#0F3F77] dark:text-white">Follow Us</h3>
                   <a
-                    href="https://facebook.com"
+                    href="https://www.facebook.com/people/Syrilla-HealthCare-Helping-Hands-Foundation/61556988760462/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-[#1E5AA6] dark:text-[#1FA35C] hover:text-[#138A4B] dark:hover:text-[#1FA35C] text-lg transition-colors"
@@ -87,7 +87,7 @@ export default function Contact() {
                     To request support, volunteer, or make a donation inquiry, please complete our secure contact form.
                   </p>
                   <a
-                    href="https://typeform-link-placeholder.com"
+                    href="https://youform-link-placeholder.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-[#138A4B] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#1FA35C] transition-all duration-300 hover:shadow-lg hover:-translate-y-1"

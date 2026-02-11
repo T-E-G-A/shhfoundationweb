@@ -28,7 +28,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/people/Syrilla-HealthCare-Helping-Hands-Foundation/61556988760462/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-white/10 hover:bg-[#1FA35C] flex items-center justify-center transition-all duration-300"
@@ -144,15 +144,15 @@ export default function Footer() {
               © {currentYear} Syrilla Healthcare Helping Hands Foundation. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
-              <Link href="#" className="hover:text-[#1FA35C] transition-colors">
+              <Link href="/privacy" className="hover:text-[#1FA35C] transition-colors">
                 Privacy Policy
               </Link>
               <span className="text-gray-600">|</span>
-              <Link href="#" className="hover:text-[#1FA35C] transition-colors">
+              <Link href="/terms" className="hover:text-[#1FA35C] transition-colors">
                 Terms & Conditions
               </Link>
               <span className="text-gray-600">|</span>
-              <Link href="#" className="hover:text-[#1FA35C] transition-colors">
+              <Link href="/cookies" className="hover:text-[#1FA35C] transition-colors">
                 Cookie Policy
               </Link>
             </div>
