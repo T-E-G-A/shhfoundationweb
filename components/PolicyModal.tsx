@@ -42,7 +42,7 @@ export default function PolicyModal({ isOpen, onClose, title, content }: PolicyM
 
         {/* Content */}
         <div className="overflow-y-auto max-h-[calc(90vh-80px)] px-6 py-8">
-          <div className="prose prose-lg dark:prose-invert prose-headings:text-[#0F3F77] dark:prose-headings:text-[#1FA35C] prose-a:text-[#138A4B] dark:prose-a:text-[#1FA35C] max-w-none">
+          <div className="prose prose-lg dark:prose-invert prose-headings:text-[#0F3F77] dark:prose-headings:text-[#1FA35C] prose-a:text-[#138A4B] dark:prose-a:text-[#1FA35C] max-w-none text-justify">
             {content}
           </div>
         </div>
