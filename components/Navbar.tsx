@@ -4,13 +4,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes, faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
-import { useTheme } from '@/contexts/ThemeContext';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import ThemeToggle from './ThemeToggle';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,30 +64,12 @@ export default function Navbar() {
             ))}
             
             {/* Theme Toggle Button */}
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-[#1A2030] hover:bg-gray-200 dark:hover:bg-[#2A3447] transition-colors duration-200"
-              aria-label="Toggle theme"
-            >
-              <FontAwesomeIcon 
-                icon={theme === 'light' ? faMoon : faSun} 
-                className="text-[#0F3F77] dark:text-[#1FA35C] w-5 h-5"
-              />
-            </button>
+            <ThemeToggle />
           </div>
 
           {/* Mobile Menu Button & Theme Toggle */}
           <div className="lg:hidden flex items-center gap-3">
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-[#1A2030] hover:bg-gray-200 dark:hover:bg-[#2A3447] transition-colors duration-200"
-              aria-label="Toggle theme"
-            >
-              <FontAwesomeIcon 
-                icon={theme === 'light' ? faMoon : faSun} 
-                className="text-[#0F3F77] dark:text-[#1FA35C] w-5 h-5"
-              />
-            </button>
+            <ThemeToggle />
             
             <button
               onClick={() => setIsOpen(!isOpen)}
