@@ -1,5 +1,14 @@
 import Card from '@/components/Card';
 import CTAButton from '@/components/CTAButton';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+  faHospital, 
+  faBook, 
+  faHandHoldingHeart,
+  faWheelchair,
+  faBullhorn,
+  faGlobe
+} from '@fortawesome/free-solid-svg-icons';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -9,71 +18,83 @@ export const metadata: Metadata = {
 
 export default function Donate() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       {/* Page Header */}
-      <section className="bg-[#0F3F77] text-white py-16">
+      <section className="bg-gradient-to-br from-[#0F3F77] to-[#1E5AA6] dark:from-[#0A2D54] dark:to-[#0F3F77] text-white py-16 md:py-20">
         <div className="container mx-auto px-4 lg:px-8">
-          <h1 className="text-5xl font-bold mb-4">Support Our Mission</h1>
-          <p className="text-xl">Your generosity helps us create lasting change in communities across Nigeria and Africa</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">Support Our Mission</h1>
+          <p className="text-lg md:text-xl animate-fade-in animate-delay-100">Your generosity helps us create lasting change in communities across Nigeria and Africa</p>
         </div>
       </section>
 
       {/* Why Donate */}
-      <section className="py-16">
+      <section className="py-16 md:py-20 bg-white dark:bg-[#0A0E1A]">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#0F3F77] mb-6">Why Your Support Matters</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0F3F77] dark:text-white mb-6 animate-fade-in">Why Your Support Matters</h2>
+            <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed animate-fade-in animate-delay-100">
               Every donation to Syrilla Healthcare Helping Hands Foundation directly supports individuals and families affected by learning disabilities, special needs, and health conditions. Your contribution helps us provide essential services, expand our reach, and create more inclusive communities.
             </p>
           </div>
 
           {/* Impact Areas */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <Card className="text-center">
-              <div className="text-5xl mb-4">🏥</div>
-              <h3 className="text-xl font-bold text-[#0F3F77] mb-3">Healthcare Access</h3>
-              <p className="text-gray-700">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16">
+            <Card className="text-center animate-fade-in">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#138A4B] to-[#1FA35C] flex items-center justify-center">
+                <FontAwesomeIcon icon={faHospital} className="text-white text-2xl" />
+              </div>
+              <h3 className="text-xl font-bold text-[#0F3F77] dark:text-white mb-3">Healthcare Access</h3>
+              <p className="text-gray-700 dark:text-gray-300 text-sm">
                 Fund medical outreach missions and provide essential medicines and equipment
               </p>
             </Card>
 
-            <Card className="text-center">
-              <div className="text-5xl mb-4">📚</div>
-              <h3 className="text-xl font-bold text-[#0F3F77] mb-3">Education & Training</h3>
-              <p className="text-gray-700">
+            <Card className="text-center animate-fade-in animate-delay-100">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#138A4B] to-[#1FA35C] flex items-center justify-center">
+                <FontAwesomeIcon icon={faBook} className="text-white text-2xl" />
+              </div>
+              <h3 className="text-xl font-bold text-[#0F3F77] dark:text-white mb-3">Education & Training</h3>
+              <p className="text-gray-700 dark:text-gray-300 text-sm">
                 Support skill acquisition programs and learning opportunities
               </p>
             </Card>
 
-            <Card className="text-center">
-              <div className="text-5xl mb-4">🤲</div>
-              <h3 className="text-xl font-bold text-[#0F3F77] mb-3">Care Services</h3>
-              <p className="text-gray-700">
+            <Card className="text-center animate-fade-in animate-delay-200">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#138A4B] to-[#1FA35C] flex items-center justify-center">
+                <FontAwesomeIcon icon={faHandHoldingHeart} className="text-white text-2xl" />
+              </div>
+              <h3 className="text-xl font-bold text-[#0F3F77] dark:text-white mb-3">Care Services</h3>
+              <p className="text-gray-700 dark:text-gray-300 text-sm">
                 Enable professional care and support for vulnerable individuals
               </p>
             </Card>
 
-            <Card className="text-center">
-              <div className="text-5xl mb-4">♿</div>
-              <h3 className="text-xl font-bold text-[#0F3F77] mb-3">Assistive Devices</h3>
-              <p className="text-gray-700">
+            <Card className="text-center animate-fade-in animate-delay-300">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#138A4B] to-[#1FA35C] flex items-center justify-center">
+                <FontAwesomeIcon icon={faWheelchair} className="text-white text-2xl" />
+              </div>
+              <h3 className="text-xl font-bold text-[#0F3F77] dark:text-white mb-3">Assistive Devices</h3>
+              <p className="text-gray-700 dark:text-gray-300 text-sm">
                 Provide wheelchairs, mobility aids, and specialist equipment
               </p>
             </Card>
 
-            <Card className="text-center">
-              <div className="text-5xl mb-4">📢</div>
-              <h3 className="text-xl font-bold text-[#0F3F77] mb-3">Advocacy</h3>
-              <p className="text-gray-700">
+            <Card className="text-center animate-fade-in animate-delay-400">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#138A4B] to-[#1FA35C] flex items-center justify-center">
+                <FontAwesomeIcon icon={faBullhorn} className="text-white text-2xl" />
+              </div>
+              <h3 className="text-xl font-bold text-[#0F3F77] dark:text-white mb-3">Advocacy</h3>
+              <p className="text-gray-700 dark:text-gray-300 text-sm">
                 Support legislative advocacy and rights protection initiatives
               </p>
             </Card>
 
-            <Card className="text-center">
-              <div className="text-5xl mb-4">🌍</div>
-              <h3 className="text-xl font-bold text-[#0F3F77] mb-3">Community Outreach</h3>
-              <p className="text-gray-700">
+            <Card className="text-center animate-fade-in animate-delay-500">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#138A4B] to-[#1FA35C] flex items-center justify-center">
+                <FontAwesomeIcon icon={faGlobe} className="text-white text-2xl" />
+              </div>
+              <h3 className="text-xl font-bold text-[#0F3F77] dark:text-white mb-3">Community Outreach</h3>
+              <p className="text-gray-700 dark:text-gray-300 text-sm">
                 Expand awareness programs and community engagement
               </p>
             </Card>
@@ -82,25 +103,40 @@ export default function Donate() {
       </section>
 
       {/* How to Donate */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 md:py-20 bg-gray-50 dark:bg-[#131825]">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl font-bold text-center text-[#0F3F77] mb-8">How to Donate</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0F3F77] dark:text-white mb-8 animate-fade-in">How to Donate</h2>
             
-            <Card className="mb-8">
-              <h3 className="text-2xl font-bold text-[#138A4B] mb-4">Make a Donation Inquiry</h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
+            <Card className="mb-8 animate-fade-in animate-delay-100">
+              <h3 className="text-2xl font-bold text-[#138A4B] dark:text-[#1FA35C] mb-4">Make a Donation Inquiry</h3>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-sm">
                 We currently process donations through direct contact to ensure transparency and provide personalized acknowledgment of your generous support. Our team will work with you to facilitate your donation and provide any information you need about how your contribution will be used.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-sm">
                 To make a donation or discuss partnership opportunities, please contact us using the button below. We accept various forms of contributions including:
               </p>
-              <ul className="list-disc list-inside text-gray-700 space-y-2 mb-6">
-                <li>One-time financial donations</li>
-                <li>Monthly recurring support</li>
-                <li>In-kind donations (medical equipment, assistive devices)</li>
-                <li>Corporate sponsorships</li>
-                <li>Memorial or honor donations</li>
+              <ul className="space-y-2 text-gray-700 dark:text-gray-300 mb-6 text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-[#138A4B] dark:text-[#1FA35C] mt-1">•</span>
+                  <span>One-time financial donations</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#138A4B] dark:text-[#1FA35C] mt-1">•</span>
+                  <span>Monthly recurring support</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#138A4B] dark:text-[#1FA35C] mt-1">•</span>
+                  <span>In-kind donations (medical equipment, assistive devices)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#138A4B] dark:text-[#1FA35C] mt-1">•</span>
+                  <span>Corporate sponsorships</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#138A4B] dark:text-[#1FA35C] mt-1">•</span>
+                  <span>Memorial or honor donations</span>
+                </li>
               </ul>
               <div className="text-center">
                 <CTAButton href="/contact" variant="primary">
@@ -109,17 +145,32 @@ export default function Donate() {
               </div>
             </Card>
 
-            <Card>
-              <h3 className="text-2xl font-bold text-[#138A4B] mb-4">Other Ways to Give</h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
+            <Card className="animate-fade-in animate-delay-200">
+              <h3 className="text-2xl font-bold text-[#138A4B] dark:text-[#1FA35C] mb-4">Other Ways to Give</h3>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4 text-sm">
                 Beyond financial contributions, there are many ways to support our mission:
               </p>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
-                <li>Volunteer your time and skills</li>
-                <li>Organize fundraising events</li>
-                <li>Donate medical equipment or assistive devices</li>
-                <li>Sponsor specific programs or initiatives</li>
-                <li>Share our mission with your network</li>
+              <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-[#138A4B] dark:text-[#1FA35C] mt-1">•</span>
+                  <span>Volunteer your time and skills</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#138A4B] dark:text-[#1FA35C] mt-1">•</span>
+                  <span>Organize fundraising events</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#138A4B] dark:text-[#1FA35C] mt-1">•</span>
+                  <span>Donate medical equipment or assistive devices</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#138A4B] dark:text-[#1FA35C] mt-1">•</span>
+                  <span>Sponsor specific programs or initiatives</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#138A4B] dark:text-[#1FA35C] mt-1">•</span>
+                  <span>Share our mission with your network</span>
+                </li>
               </ul>
             </Card>
           </div>
@@ -127,14 +178,14 @@ export default function Donate() {
       </section>
 
       {/* Transparency */}
-      <section className="py-16">
+      <section className="py-16 md:py-20 bg-white dark:bg-[#0A0E1A]">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-[#0F3F77] mb-6">Our Commitment to Transparency</h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0F3F77] dark:text-white mb-6 animate-fade-in">Our Commitment to Transparency</h2>
+            <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8 animate-fade-in animate-delay-100">
               We are committed to strong governance and accountability. Every donation is used responsibly to support our programs and services. We maintain transparent financial practices and are happy to provide information about how your contribution makes a difference.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed animate-fade-in animate-delay-200">
               For questions about donations, financial reporting, or our governance practices, please contact us directly.
             </p>
           </div>
@@ -142,15 +193,17 @@ export default function Donate() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-[#138A4B] text-white">
+      <section className="py-16 md:py-20 bg-gradient-to-br from-[#138A4B] to-[#1FA35C] text-white">
         <div className="container mx-auto px-4 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Every Contribution Counts</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in">Every Contribution Counts</h2>
+          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in animate-delay-100">
             Whether large or small, your donation helps us empower individuals and create more inclusive communities.
           </p>
-          <CTAButton href="/contact" variant="secondary">
-            Get in Touch
-          </CTAButton>
+          <div className="animate-fade-in animate-delay-200">
+            <CTAButton href="/contact" variant="secondary">
+              Get in Touch
+            </CTAButton>
+          </div>
         </div>
       </section>
     </div>
