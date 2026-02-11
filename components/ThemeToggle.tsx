@@ -23,18 +23,15 @@ export default function ThemeToggle() {
   }, []);
 
   const handleClick = () => {
-    alert('Button clicked! Current isDark: ' + isDark);
     const newIsDark = !isDark;
     setIsDark(newIsDark);
     
     if (newIsDark) {
       document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
-      alert('Switched to DARK mode');
     } else {
       document.documentElement.classList.remove('dark');
       localStorage.setItem('theme', 'light');
-      alert('Switched to LIGHT mode');
     }
   };
 
@@ -42,9 +39,9 @@ export default function ThemeToggle() {
     <button
       onClick={handleClick}
       type="button"
-      className="p-2.5 rounded-lg bg-gray-100 dark:bg-[#1A2030] hover:bg-gray-200 dark:hover:bg-[#2A3447] transition-all duration-200 border-4 border-red-500"
+      className="p-2.5 rounded-lg bg-gray-100 dark:bg-[#1A2030] hover:bg-gray-200 dark:hover:bg-[#2A3447] transition-all duration-200"
       aria-label="Toggle theme"
-      style={{ cursor: 'pointer', zIndex: 9999 }}
+      style={{ cursor: 'pointer' }}
     >
       <FontAwesomeIcon 
         icon={isDark ? faSun : faMoon} 
