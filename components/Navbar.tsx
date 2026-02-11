@@ -33,7 +33,7 @@ export default function Navbar() {
     <nav 
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/80 dark:bg-[#0A0E1A]/80 backdrop-blur-lg shadow-lg' 
+          ? 'bg-white/90 dark:bg-[#0A0E1A]/90 backdrop-blur-lg shadow-lg' 
           : 'bg-white dark:bg-[#0A0E1A] shadow-md'
       }`}
     >
@@ -56,7 +56,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[#0F3F77] dark:text-white hover:text-[#138A4B] dark:hover:text-[#1FA35C] font-medium transition-colors duration-200 relative group"
+                className="text-gray-700 dark:text-gray-200 hover:text-[#138A4B] dark:hover:text-[#1FA35C] font-medium transition-colors duration-200 relative group"
               >
                 {link.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#138A4B] dark:bg-[#1FA35C] transition-all duration-300 group-hover:w-full"></span>
@@ -73,7 +73,7 @@ export default function Navbar() {
             
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-[#0F3F77] dark:text-white text-2xl p-2"
+              className="text-gray-700 dark:text-gray-200 text-2xl p-2"
               aria-label="Toggle menu"
             >
               <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
@@ -88,7 +88,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block py-3 text-[#0F3F77] dark:text-white hover:text-[#138A4B] dark:hover:text-[#1FA35C] font-medium transition-colors duration-200 border-b border-gray-100 dark:border-[#2A3447]"
+                className="block py-3 text-gray-700 dark:text-gray-200 hover:text-[#138A4B] dark:hover:text-[#1FA35C] font-medium transition-colors duration-200 border-b border-gray-200 dark:border-[#2A3447]"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}

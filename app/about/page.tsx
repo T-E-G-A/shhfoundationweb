@@ -13,7 +13,7 @@ export default function About() {
   return (
     <div className="overflow-x-hidden">
       {/* Page Header */}
-      <section className="bg-gradient-to-br from-[#0F3F77] to-[#1E5AA6] dark:from-[#0A2D54] dark:to-[#0F3F77] text-white py-16 md:py-20">
+      <section className="bg-gradient-to-br from-[#0F3F77] to-[#1E5AA6] dark:from-[#0A2D54] dark:to-[#0F3F77] text-white py-24 md:py-32">
         <div className="container mx-auto px-4 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">About Us</h1>
           <p className="text-lg md:text-xl animate-fade-in animate-delay-100">Our story, mission, and the people behind our work</p>
@@ -21,10 +21,10 @@ export default function About() {
       </section>
 
       {/* Our Story */}
-      <section className="py-16 md:py-20 bg-white dark:bg-[#0A0E1A]">
+      <section className="py-24 md:py-32 bg-white dark:bg-[#0A0E1A]">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0F3F77] dark:text-white mb-6 animate-fade-in">Our Story</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0F3F77] dark:text-white mb-10 animate-fade-in">Our Story</h2>
             <div className="space-y-6 text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
               <p className="animate-fade-in animate-delay-100">
                 Syrilla Healthcare Helping Hands Foundation was established in 2025 from the lived experience of the Founder and Co-Founder while raising a child diagnosed with cerebral palsy in Nigeria.
@@ -41,13 +41,13 @@ export default function About() {
       </section>
 
       {/* Founders */}
-      <section className="py-16 md:py-20 bg-gray-50 dark:bg-[#131825]">
+      <section className="py-24 md:py-32 bg-gray-50 dark:bg-[#131825]">
         <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0F3F77] dark:text-white mb-12 animate-fade-in">Our Founders</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0F3F77] dark:text-white mb-16 animate-fade-in">Our Founders</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
             {/* Cyril */}
             <Card className="text-center animate-fade-in">
-              <div className="mb-6">
+              <div className="mb-10">
                 <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-[#138A4B] dark:border-[#1FA35C] shadow-lg">
                   <Image
                     src="/cyril.jpeg"
@@ -67,7 +67,7 @@ export default function About() {
 
             {/* Joy */}
             <Card className="text-center animate-fade-in animate-delay-100">
-              <div className="mb-6">
+              <div className="mb-10">
                 <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-[#138A4B] dark:border-[#1FA35C] shadow-lg">
                   <Image
                     src="/joy.jpeg"
@@ -89,10 +89,10 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="py-16 md:py-20 bg-white dark:bg-[#0A0E1A]">
+      <section className="py-24 md:py-32 bg-white dark:bg-[#0A0E1A]">
         <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0F3F77] dark:text-white mb-12 animate-fade-in">Our Core Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0F3F77] dark:text-white mb-16 animate-fade-in">Our Core Values</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 max-w-5xl mx-auto">
             <Card className="text-center animate-fade-in">
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#138A4B] to-[#1FA35C] flex items-center justify-center">
                 <FontAwesomeIcon icon={faHeart} className="text-white text-2xl" />

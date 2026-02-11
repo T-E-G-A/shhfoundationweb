@@ -70,7 +70,7 @@ export default function Programs() {
   return (
     <div className="overflow-x-hidden">
       {/* Page Header */}
-      <section className="bg-gradient-to-br from-[#0F3F77] to-[#1E5AA6] dark:from-[#0A2D54] dark:to-[#0F3F77] text-white py-16 md:py-20">
+      <section className="bg-gradient-to-br from-[#0F3F77] to-[#1E5AA6] dark:from-[#0A2D54] dark:to-[#0F3F77] text-white py-24 md:py-32">
         <div className="container mx-auto px-4 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">Our Programs</h1>
           <p className="text-lg md:text-xl animate-fade-in animate-delay-100">Comprehensive services supporting communities across Nigeria and Africa</p>
@@ -78,9 +78,9 @@ export default function Programs() {
       </section>
 
       {/* Programs Grid */}
-      <section className="py-16 md:py-20 bg-white dark:bg-[#0A0E1A]">
+      <section className="py-24 md:py-32 bg-white dark:bg-[#0A0E1A]">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12">
             {programs.map((program, index) => (
               <Card key={index} className={`animate-fade-in animate-delay-${Math.min(index, 5)}00`}>
                 <div className="w-14 h-14 mb-4 rounded-xl bg-gradient-to-br from-[#138A4B] to-[#1FA35C] flex items-center justify-center">
@@ -95,10 +95,10 @@ export default function Programs() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 md:py-20 bg-gradient-to-br from-[#138A4B] to-[#1FA35C] text-white">
+      <section className="py-24 md:py-32 bg-gradient-to-br from-[#138A4B] to-[#1FA35C] text-white">
         <div className="container mx-auto px-4 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in">Want to Learn More?</h2>
-          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in animate-delay-100">
+          <h2 className="text-3xl md:text-4xl font-bold mb-10 animate-fade-in">Want to Learn More?</h2>
+          <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto animate-fade-in animate-delay-100">
             Contact us to find out how our programs can support you or your community.
           </p>
           <a

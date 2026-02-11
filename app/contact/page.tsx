@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <div className="overflow-x-hidden">
       {/* Page Header */}
-      <section className="bg-gradient-to-br from-[#0F3F77] to-[#1E5AA6] dark:from-[#0A2D54] dark:to-[#0F3F77] text-white py-16 md:py-20">
+      <section className="bg-gradient-to-br from-[#0F3F77] to-[#1E5AA6] dark:from-[#0A2D54] dark:to-[#0F3F77] text-white py-24 md:py-32">
         <div className="container mx-auto px-4 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">Contact Us</h1>
           <p className="text-lg md:text-xl animate-fade-in animate-delay-100">We are here to help and support you</p>
@@ -21,15 +21,15 @@ export default function Contact() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 md:py-20 bg-white dark:bg-[#0A0E1A]">
+      <section className="py-24 md:py-32 bg-white dark:bg-[#0A0E1A]">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Contact Information Card */}
             <div className="animate-fade-in">
               <Card hover={false}>
-                <h2 className="text-3xl font-bold text-[#0F3F77] dark:text-white mb-6">Contact Information</h2>
+                <h2 className="text-3xl font-bold text-[#0F3F77] dark:text-white mb-10">Contact Information</h2>
                 
-                <div className="space-y-6 mb-8">
+                <div className="space-y-6 mb-12">
                   <div className="flex items-start gap-4 p-4 rounded-lg bg-gray-50 dark:bg-[#1A2030] transition-all duration-300 hover:shadow-md">
                     <div className="w-12 h-12 flex-shrink-0 rounded-xl bg-gradient-to-br from-[#138A4B] to-[#1FA35C] flex items-center justify-center">
                       <FontAwesomeIcon icon={faEnvelope} className="text-white text-xl" />
@@ -69,7 +69,7 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="border-t border-gray-200 dark:border-[#2A3447] pt-6 mb-8">
+                <div className="border-t border-gray-200 dark:border-[#2A3447] pt-6 mb-12">
                   <h3 className="font-semibold text-lg mb-4 text-[#0F3F77] dark:text-white">Follow Us</h3>
                   <a
                     href="https://facebook.com"
@@ -83,7 +83,7 @@ export default function Contact() {
                 </div>
 
                 <div className="border-t border-gray-200 dark:border-[#2A3447] pt-6">
-                  <p className="text-gray-700 dark:text-gray-300 mb-6 text-sm">
+                  <p className="text-gray-700 dark:text-gray-300 mb-10 text-sm">
                     To request support, volunteer, or make a donation inquiry, please complete our secure contact form.
                   </p>
                   <a
@@ -102,7 +102,7 @@ export default function Contact() {
             {/* Google Map */}
             <div className="animate-fade-in animate-delay-100">
               <Card hover={false} className="h-full">
-                <h2 className="text-3xl font-bold text-[#0F3F77] dark:text-white mb-6">Find Us</h2>
+                <h2 className="text-3xl font-bold text-[#0F3F77] dark:text-white mb-10">Find Us</h2>
                 <div className="w-full h-[500px] rounded-xl overflow-hidden">
                   <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.143461637115!2d7.48496157490949!3d9.050675991011543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0ba3c4c0a7e1%3A0x250b55b34f243f4!2s784A%20Herbert%20Macaulay%20Wy%2C%20Central%20Business%20Dis%2C%20Abuja%20900103%2C%20Federal%20Capital%20Territory%2C%20Nigeria!5e0!3m2!1sen!2suk!4v1770820688139!5m2!1sen!2suk"
@@ -122,11 +122,11 @@ export default function Contact() {
       </section>
 
       {/* We Are Here for You */}
-      <section className="py-16 md:py-20 bg-gray-50 dark:bg-[#131825]">
+      <section className="py-24 md:py-32 bg-gray-50 dark:bg-[#131825]">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0F3F77] dark:text-white mb-6 animate-fade-in">We Are Here for You</h2>
-            <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-12 animate-fade-in animate-delay-100">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0F3F77] dark:text-white mb-10 animate-fade-in">We Are Here for You</h2>
+            <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-16 animate-fade-in animate-delay-100">
               Whether you need support, want to volunteer, or have questions about our programs, we welcome your inquiry. Our team is committed to responding promptly and providing the assistance you need.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

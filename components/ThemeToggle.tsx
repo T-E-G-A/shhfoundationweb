@@ -6,8 +6,10 @@ import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     // Get initial theme
     const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
     const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
@@ -24,15 +26,19 @@ export default function ThemeToggle() {
     document.documentElement.classList.toggle('dark', newTheme === 'dark');
   };
 
+  if (!mounted) {
+    return <div className="w-10 h-10"></div>; // Placeholder to prevent layout shift
+  }
+
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-lg bg-gray-100 dark:bg-[#1A2030] hover:bg-gray-200 dark:hover:bg-[#2A3447] transition-colors duration-200"
+      className="p-2.5 rounded-lg bg-gray-100 dark:bg-[#1A2030] hover:bg-gray-200 dark:hover:bg-[#2A3447] transition-all duration-200"
       aria-label="Toggle theme"
     >
       <FontAwesomeIcon 
         icon={theme === 'light' ? faMoon : faSun} 
-        className="text-[#0F3F77] dark:text-[#1FA35C] w-5 h-5"
+        className="text-gray-700 dark:text-[#1FA35C] w-5 h-5"
       />
     </button>
   );

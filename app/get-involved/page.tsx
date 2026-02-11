@@ -25,7 +25,7 @@ export default function GetInvolved() {
   return (
     <div className="overflow-x-hidden">
       {/* Page Header */}
-      <section className="bg-gradient-to-br from-[#0F3F77] to-[#1E5AA6] dark:from-[#0A2D54] dark:to-[#0F3F77] text-white py-16 md:py-20">
+      <section className="bg-gradient-to-br from-[#0F3F77] to-[#1E5AA6] dark:from-[#0A2D54] dark:to-[#0F3F77] text-white py-24 md:py-32">
         <div className="container mx-auto px-4 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">Get Involved</h1>
           <p className="text-lg md:text-xl animate-fade-in animate-delay-100">Join us in creating positive change in communities across Nigeria and Africa</p>
@@ -33,17 +33,17 @@ export default function GetInvolved() {
       </section>
 
       {/* Ways to Get Involved */}
-      <section className="py-16 md:py-20 bg-white dark:bg-[#0A0E1A]">
+      <section className="py-24 md:py-32 bg-white dark:bg-[#0A0E1A]">
         <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0F3F77] dark:text-white mb-12 animate-fade-in">Ways to Make a Difference</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0F3F77] dark:text-white mb-16 animate-fade-in">Ways to Make a Difference</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 mb-16">
             <Card className="text-center animate-fade-in">
-              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#138A4B] to-[#1FA35C] flex items-center justify-center">
+              <div className="w-20 h-20 mx-auto mb-10 rounded-full bg-gradient-to-br from-[#138A4B] to-[#1FA35C] flex items-center justify-center">
                 <FontAwesomeIcon icon={faHandshake} className="text-white text-3xl" />
               </div>
               <h3 className="text-2xl font-bold text-[#0F3F77] dark:text-white mb-4">Volunteer</h3>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-sm">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-10 text-sm">
                 Share your time, skills, and passion to support our programs and make a direct impact in the lives of those we serve.
               </p>
               <CTAButton href="/contact" variant="primary">
@@ -52,11 +52,11 @@ export default function GetInvolved() {
             </Card>
 
             <Card className="text-center animate-fade-in animate-delay-100">
-              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#138A4B] to-[#1FA35C] flex items-center justify-center">
+              <div className="w-20 h-20 mx-auto mb-10 rounded-full bg-gradient-to-br from-[#138A4B] to-[#1FA35C] flex items-center justify-center">
                 <FontAwesomeIcon icon={faHeart} className="text-white text-3xl" />
               </div>
               <h3 className="text-2xl font-bold text-[#0F3F77] dark:text-white mb-4">Donate</h3>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-sm">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-10 text-sm">
                 Your financial support helps us expand our programs, reach more communities, and provide essential services.
               </p>
               <CTAButton href="/donate" variant="primary">
@@ -65,11 +65,11 @@ export default function GetInvolved() {
             </Card>
 
             <Card className="text-center animate-fade-in animate-delay-200">
-              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#138A4B] to-[#1FA35C] flex items-center justify-center">
+              <div className="w-20 h-20 mx-auto mb-10 rounded-full bg-gradient-to-br from-[#138A4B] to-[#1FA35C] flex items-center justify-center">
                 <FontAwesomeIcon icon={faHandHoldingHeart} className="text-white text-3xl" />
               </div>
               <h3 className="text-2xl font-bold text-[#0F3F77] dark:text-white mb-4">Request Support</h3>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-sm">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-10 text-sm">
                 If you or someone you know needs our services, reach out to us. We are here to help and support you.
               </p>
               <CTAButton href="/contact" variant="primary">
@@ -81,9 +81,9 @@ export default function GetInvolved() {
       </section>
 
       {/* Volunteer Opportunities */}
-      <section className="py-16 md:py-20 bg-gray-50 dark:bg-[#131825]">
+      <section className="py-24 md:py-32 bg-gray-50 dark:bg-[#131825]">
         <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0F3F77] dark:text-white mb-12 animate-fade-in">Volunteer Opportunities</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0F3F77] dark:text-white mb-16 animate-fade-in">Volunteer Opportunities</h2>
           
           <div className="max-w-4xl mx-auto space-y-6">
             <Card className="animate-fade-in">
@@ -146,15 +146,15 @@ export default function GetInvolved() {
       </section>
 
       {/* Partnership Opportunities */}
-      <section className="py-16 md:py-20 bg-white dark:bg-[#0A0E1A]">
+      <section className="py-24 md:py-32 bg-white dark:bg-[#0A0E1A]">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0F3F77] dark:text-white mb-8 animate-fade-in">Partnership Opportunities</h2>
-            <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-center mb-12 animate-fade-in animate-delay-100">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0F3F77] dark:text-white mb-12 animate-fade-in">Partnership Opportunities</h2>
+            <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-center mb-16 animate-fade-in animate-delay-100">
               We welcome partnerships with organizations, businesses, and institutions that share our commitment to creating inclusive and supportive communities.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
               <Card className="animate-fade-in">
                 <div className="flex items-start gap-4 mb-3">
                   <div className="w-12 h-12 flex-shrink-0 rounded-xl bg-gradient-to-br from-[#138A4B] to-[#1FA35C] flex items-center justify-center">
@@ -208,10 +208,10 @@ export default function GetInvolved() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 md:py-20 bg-gradient-to-br from-[#138A4B] to-[#1FA35C] text-white">
+      <section className="py-24 md:py-32 bg-gradient-to-br from-[#138A4B] to-[#1FA35C] text-white">
         <div className="container mx-auto px-4 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in">Ready to Make a Difference?</h2>
-          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in animate-delay-100">
+          <h2 className="text-3xl md:text-4xl font-bold mb-10 animate-fade-in">Ready to Make a Difference?</h2>
+          <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto animate-fade-in animate-delay-100">
             Contact us today to learn more about how you can get involved and support our mission.
           </p>
           <div className="animate-fade-in animate-delay-200">
